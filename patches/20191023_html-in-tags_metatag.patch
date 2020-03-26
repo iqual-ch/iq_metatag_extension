@@ -1,0 +1,13 @@
+diff --git a/src/MetatagManager.php b/src/MetatagManager.php
+index 57c4ca2..643dbe6 100644
+--- a/src/MetatagManager.php
++++ b/src/MetatagManager.php
+@@ -535,7 +535,7 @@ class MetatagManager implements MetatagManagerInterface {
+         $tag->setValue($value);
+         $langcode = \Drupal::languageManager()->getCurrentLanguage(LanguageInterface::TYPE_CONTENT)->getId();
+
+-        $processed_value = PlainTextOutput::renderFromHtml(htmlspecialchars_decode($this->tokenService->replace($tag->value(), $token_replacements, ['langcode' => $langcode])));
++        $processed_value = htmlspecialchars_decode($this->tokenService->replace($tag->value(), $token_replacements, ['langcode' => $langcode]));
+
+         // Now store the value with processed tokens back into the plugin.
+         $tag->setValue($processed_value);

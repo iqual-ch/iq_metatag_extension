@@ -1,0 +1,5 @@
+{
+  "name": "iqual/iq_metatag_extension",
+  "description": "Extend the metatag module",
+  "type": "drupal-custom-module"
+}

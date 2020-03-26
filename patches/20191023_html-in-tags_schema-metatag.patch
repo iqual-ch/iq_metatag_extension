@@ -1,0 +1,13 @@
+diff --git a/src/SchemaMetatagManager.php b/src/SchemaMetatagManager.php
+index 8d6fae2..80adbbc 100644
+--- a/src/SchemaMetatagManager.php
++++ b/src/SchemaMetatagManager.php
+@@ -51,7 +51,7 @@ class SchemaMetatagManager implements SchemaMetatagManagerInterface {
+     // If some group has been found, render the JSON LD,
+     // otherwise return nothing.
+     if (!empty($items)) {
+-      return json_encode($items, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT | JSON_UNESCAPED_UNICODE);
++      return json_encode($items, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
+     }
+     else {
+       return '';

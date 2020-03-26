@@ -1,0 +1,11 @@
+{
+  "patches": {
+    "drupal/metatag": {
+      "Allow html in tags (metatag)": "/var/www/patches/20191023_html-in-tags_metatag.patch"
+    },
+    "drupal/schema_metatag": {
+      "Allow html in tags (metatag)": "/var/www/patches/20191023_html-in-tags_schema-metatag.patch",
+      "Change pivot string to ::": "/var/www/patches/20191126_change-pivot_schema-metatag.patch"
+    }
+  }
+}
