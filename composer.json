@@ -1,5 +1,8 @@
 {
   "name": "iqual/iq_metatag_extension",
   "description": "Extend the metatag module",
-  "type": "drupal-custom-module"
+  "type": "drupal-custom-module",
+  "require": {
+    "drupal/schema_metatag": "^2.0"
+  }
 }
