@@ -4,5 +4,16 @@
   "type": "drupal-custom-module",
   "require": {
     "drupal/schema_metatag": "~2.4.0"
+  },
+  "extra": {
+    "patches": {
+      "drupal/metatag": {
+        "Allow html in tags (metatag)": "./patches/20200331_html-in-tags_metatag.patch"
+      },
+      "drupal/schema_metatag": {
+        "Allow html in tags (metatag)": "./patches/20191023_html-in-tags_schema-metatag.patch",
+        "Change pivot element": "./patches/20230313_schema_metatag_change_pivot.diff"
+      }
+    }
   }
 }
