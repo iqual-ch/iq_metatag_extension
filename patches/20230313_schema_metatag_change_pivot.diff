@@ -1,8 +1,8 @@
 diff --git a/src/SchemaMetatagManager.php b/src/SchemaMetatagManager.php
-index 88fa97a..526d32b 100644
+index 6103e84..52d0f98 100644
 --- a/src/SchemaMetatagManager.php
 +++ b/src/SchemaMetatagManager.php
-@@ -169,7 +169,7 @@ class SchemaMetatagManager implements SchemaMetatagManagerInterface {
+@@ -181,7 +181,7 @@ public static function countNumericKeys($item) {
     */
    public static function explode($value) {
      if (is_string($value)) {
