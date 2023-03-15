@@ -8,7 +8,7 @@
   "extra": {
     "patches": {
       "drupal/schema_metatag": {
-        "Allow html in tags (metatag)": "https://raw.githubusercontent.com/iqual-ch/iq_metatag_extension/issue/US-1234_update_metatags_2.x/patches/20191023_html-in-tags_schema-metatag.patch",
+        "Allow html in tags (metatag)": "https://raw.githubusercontent.com/iqual-ch/iq_metatag_extension/issue/US-1234_update_metatags_2.x/patches/20230313_schema_metatag_html-in-tags.diff",
         "Change pivot element": "https://raw.githubusercontent.com/iqual-ch/iq_metatag_extension/issue/US-1234_update_metatags_2.x/patches/20230313_schema_metatag_change_pivot.diff"
       }
     }

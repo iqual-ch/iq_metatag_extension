@@ -1,0 +1,26 @@
+diff --git a/src/Plugin/metatag/Tag/SchemaNameBase.php b/src/Plugin/metatag/Tag/SchemaNameBase.php
+index e9b9bd8..32e67c7 100644
+--- a/src/Plugin/metatag/Tag/SchemaNameBase.php
++++ b/src/Plugin/metatag/Tag/SchemaNameBase.php
+@@ -272,7 +272,7 @@ protected function processItem(&$value, $key = 0) {
+     $value = $this->parseImageUrlValue($value, $explode);
+ 
+     // Convert value to plain text.
+-    $value = PlainTextOutput::renderFromHtml($value);
++    // $value = PlainTextOutput::renderFromHtml($value);
+ 
+     // Trim resulting plain text value.
+     $value = trim($value);
+diff --git a/src/SchemaMetatagManager.php b/src/SchemaMetatagManager.php
+index 6103e84..205d056 100644
+--- a/src/SchemaMetatagManager.php
++++ b/src/SchemaMetatagManager.php
+@@ -57,7 +57,7 @@ public static function encodeJsonld(array $items) {
+     // If some group has been found, render the JSON LD,
+     // otherwise return nothing.
+     if (!empty($items)) {
+-      return json_encode($items, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_HEX_TAG | JSON_HEX_APOS | JSON_HEX_AMP | JSON_HEX_QUOT | JSON_UNESCAPED_UNICODE);
++      return json_encode($items, JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_HEX_AMP | JSON_UNESCAPED_UNICODE);
+     }
+     else {
+       return '';
