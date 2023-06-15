@@ -5,16 +5,5 @@
   "require": {
     "drupal/schema_metatag": "^2.0",
     "drupal/metatag": "^1.25"
-  },
-  "extra": {
-    "patches": {
-      "drupal/metatag": {
-        "Allow html in tags (metatag)": "https://raw.githubusercontent.com/iqual-ch/iq_metatag_extension/2.x/patches/20200331_html-in-tags_metatag.patch"
-      },
-      "drupal/schema_metatag": {
-        "Allow html in tags (metatag)": "https://raw.githubusercontent.com/iqual-ch/iq_metatag_extension/2.x/patches/20191023_html-in-tags_schema-metatag.patch",
-        "Change pivot string to ::": "https://raw.githubusercontent.com/iqual-ch/iq_metatag_extension/2.x/patches/20211029_change-pivot_schema-metatag.patch"
-      }
-    }
   }
 }
