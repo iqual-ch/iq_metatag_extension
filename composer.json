@@ -3,7 +3,7 @@
   "description": "Extend the metatag module",
   "type": "drupal-custom-module",
   "require": {
-    "drupal/schema_metatag": "^2.0",
-    "drupal/metatag": "^2.00"
+    "drupal/schema_metatag": "^3.0",
+    "drupal/metatag": "^2.0"
   }
 }
