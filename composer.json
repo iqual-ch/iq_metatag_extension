@@ -5,5 +5,15 @@
   "require": {
     "drupal/schema_metatag": "^3.0",
     "drupal/metatag": "^2.0"
+  },
+  "extra": {
+    "patches": {
+      "drupal/metatag": {
+        "#3367071: Custom separator also used for string concatenation": "https://git.drupalcode.org/project/metatag/-/merge_requests/85/diffs.diff?commit_id=6c1b5d7c69a9a6338f41cc3b41885849b805c884"
+      },
+      "drupal/schema_metatag": {
+        "#3367076: Custom separator also used for string concatenation": "https://git.drupalcode.org/project/schema_metatag/-/merge_requests/35/diffs.diff?commit_id=5e99723befe37ab43e781ddad4edfcd89e3be609"
+      }
+    }
   }
 }
