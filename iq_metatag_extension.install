@@ -1,0 +1,14 @@
+<?php
+
+/**
+ * @file
+ * Iq_metatag_extension install file.
+ */
+
+/**
+ * Set metatag separator to ::.
+ */
+function iq_metatag_extension_update_9000(&$sandbox) {
+  $config = \Drupal::configFactory()->getEditable('metatag.settings');
+  $config->set('separator', '::')->save();
+}
