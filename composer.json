@@ -4,6 +4,8 @@
   "type": "drupal-custom-module",
   "require": {
     "drupal/schema_metatag": "^2.0",
-    "drupal/metatag": "1.23"
+    "drupal/metatag": "1.23",
+    "php": "^8.1",
+    "drupal/core": "^9.5 || ^10"
   }
 }
