@@ -3,9 +3,8 @@
   "description": "Extend the metatag module",
   "type": "drupal-custom-module",
   "require": {
-    "drupal/schema_metatag": "^2.0",
-    "drupal/metatag": "1.23",
     "php": "^8.1",
-    "drupal/core": "^9.5 || ^10"
+    "drupal/core": "^9.5 || ^10",
+    "drupal/schema_metatag": "^3.0"
   }
 }
