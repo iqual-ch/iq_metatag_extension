@@ -2,13 +2,29 @@
 
 /**
  * @file
- * Iq_metatag_extension install file.
+ * Install, update and uninstall functions for the iq_metatag_extension module.
  */
 
 /**
- * Set metatag separator to ::.
+ * Set separator value.
  */
-function iq_metatag_extension_update_9000(&$sandbox) {
-  $config = \Drupal::configFactory()->getEditable('metatag.settings');
-  $config->set('separator', '::')->save();
+function iq_metatag_extension_install() {
+  _iq_metatag_extension_set_separator();
+}
+
+/**
+ * Set separator value.
+ */
+function iq_metatag_extension_update_10000() {
+  _iq_metatag_extension_set_separator();
+}
+
+/**
+ * Set separator value.
+ */
+function _iq_metatag_extension_set_separator() {
+  $metatag_config = \Drupal::configFactory()->getEditable('metatag.settings');
+  if (!$metatag_config->get('separator') || $metatag_config->get('separator') == ',') {
+    $metatag_config->set('separator', '::')->save();
+  }
 }

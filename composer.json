@@ -3,17 +3,14 @@
   "description": "Extend the metatag module",
   "type": "drupal-custom-module",
   "require": {
-    "drupal/schema_metatag": "^3.0",
-    "drupal/metatag": "^2.0"
+    "php": "^8.1",
+    "drupal/core": "^9.5 || ^10",
+    "drupal/schema_metatag": "3.0.1"
   },
   "extra": {
     "patches": {
-      "drupal/metatag": {
-        "#3367071: Custom separator also used for string concatenation": "https://git.drupalcode.org/project/metatag/-/merge_requests/85/diffs.diff?commit_id=6c1b5d7c69a9a6338f41cc3b41885849b805c884"
-      },
       "drupal/schema_metatag": {
-        "#3367076: Custom separator also used for string concatenation": "https://git.drupalcode.org/project/schema_metatag/-/merge_requests/35/diffs.diff?commit_id=5e99723befe37ab43e781ddad4edfcd89e3be609",
-        "#3186311: Pivot on sub elements like images, FAQ answers etc": "https://www.drupal.org/files/issues/2022-09-12/3186311_22.patch"
+        "[https://dgo.to/3400436]: Escape html instead of stripping html tags": "https://git.drupalcode.org/project/schema_metatag/-/merge_requests/43/diffs.diff?diff_id=635879"
       }
     }
   }
