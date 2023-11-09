@@ -5,6 +5,13 @@
   "require": {
     "php": "^8.1",
     "drupal/core": "^9.5 || ^10",
-    "drupal/schema_metatag": "^3.0"
+    "drupal/schema_metatag": "3.0.1"
+  },
+  "extra": {
+    "patches": {
+      "drupal/schema_metatag": {
+        "[https://dgo.to/3400436]: Escape html instead of stripping html tags": "https://git.drupalcode.org/project/schema_metatag/-/merge_requests/43/diffs.diff?diff_id=635879"
+      }
+    }
   }
 }
